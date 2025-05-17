@@ -1,0 +1,43 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Capital Roleplay Launcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Capital RP">
+    <meta name="theme-color" content="#000000">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Capital RP">
+    <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <!-- Removed logo image as per user request -->
+        <h1>Capital Roleplay</h1>
+        
+        <div class="buttons-container">
+            <button id="btnIniciar" class="btn">Iniciar</button>
+            <button id="btnDownload" class="btn">Iniciar Download</button>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;">
+            Parece que o SA-MP não está instalado ou não foi possível abri-lo. 
+            Por favor, <a href="#" id="downloadLinkError">faça o download do cliente SA-MP</a>.
+        </div>
+         <div id="orientationMessage" class="orientation-message" style="display: none;">
+            Para uma melhor experiência, por favor, rotacione seu dispositivo para o modo paisagem.
+        </div>
+
+        <button id="btnAtualizar" class="btn btn-secondary">Atualizar Launcher</button>
+    </div>
+    <footer>
+        <p>Versão <span id="launcherVersion">1.0.0</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
